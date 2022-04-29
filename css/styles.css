@@ -1,5 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
 body {
   background-color: #ecf2f8;
-  font-family: "Manrope", sans-serif; }
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh; }
+
+main {
+  background-color: #fff;
+  margin: 1rem; }
+
+.img-container img {
+  max-width: 100%;
+  display: block; }
+
+.article-preview {
+  padding: 2rem; }
+  .article-preview-title {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #48556a;
+    margin-bottom: 1rem; }
+  .article-preview-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #6d7f97; }
+
+.profile-preview {
+  position: relative; }
+  .profile-preview-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem; }
+  .profile-preview-img {
+    overflow: hidden;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px; }
+    .profile-preview-img img {
+      max-width: 100%; }
+  .profile-preview-author {
+    margin-left: 1rem; }
+    .profile-preview-author .author-name {
+      font-size: 0.85rem; }
+    .profile-preview-author .post-date {
+      font-size: 0.85rem; }
+  .profile-preview-share {
+    background-color: #48556a;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    height: 82px; }
+    .profile-preview-share h2 {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: #9eafc2;
+      font-weight: 500;
+      letter-spacing: 4px; }
+  .profile-preview-social {
+    display: flex;
+    align-items: center; }
+    .profile-preview-social img {
+      margin-left: 1rem; }
+
+.share-btn {
+  background-color: #9eafc2;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem; }
 
 /*# sourceMappingURL=styles.css.map */
