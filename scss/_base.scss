@@ -4,6 +4,8 @@ $grayish-blue: hsl(212, 23%, 69%);
 $light-grayish-blue: hsl(210, 46%, 95%);
 $white: #fff;
 
+$medium-brak-point: 768px;
+
 *,
 *::after,
 *::before {
@@ -20,4 +22,7 @@ body {
 	background-color: $light-grayish-blue;
 	font-family: "Manrope", sans-serif;
 	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

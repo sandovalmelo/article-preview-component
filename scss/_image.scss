@@ -4,3 +4,13 @@
 		display: block;
 	}
 }
+
+@media (min-width: $medium-brak-point) {
+	.img-container {
+		img {
+			height: 100%;
+			object-fit: cover;
+			object-position: left;
+		}
+	}
+}

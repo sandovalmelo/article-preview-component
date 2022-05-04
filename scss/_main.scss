@@ -1,4 +1,14 @@
 main {
 	background-color: $white;
 	margin: 1rem;
+	border-radius: 12px;
+	overflow: hidden;
+	max-width: 400px;
+}
+
+@media (min-width: $medium-brak-point) {
+	main {
+		display: flex;
+		max-width: 46rem;
+	}
 }
