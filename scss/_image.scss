@@ -1,7 +1,6 @@
 .img-container {
 	overflow: hidden;
-	border-top-left-radius: $border-radius;
-	border-bottom-left-radius: $border-radius;
+
 	img {
 		max-width: 100%;
 		display: block;
@@ -10,6 +9,9 @@
 
 @media (min-width: $medium-brak-point) {
 	.img-container {
+		border-top-left-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+
 		img {
 			height: 100%;
 			object-fit: cover;

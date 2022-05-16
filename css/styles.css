@@ -30,18 +30,19 @@ main {
     max-width: 46rem;
     overflow: visible; } }
 .img-container {
-  overflow: hidden;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px; }
+  overflow: hidden; }
   .img-container img {
     max-width: 100%;
     display: block; }
 
 @media (min-width: 768px) {
-  .img-container img {
-    height: 100%;
-    object-fit: cover;
-    object-position: left; } }
+  .img-container {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; }
+    .img-container img {
+      height: 100%;
+      object-fit: cover;
+      object-position: left; } }
 .article-preview {
   padding: 2rem; }
   .article-preview-title {
