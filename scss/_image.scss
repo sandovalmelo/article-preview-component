@@ -1,4 +1,7 @@
 .img-container {
+	overflow: hidden;
+	border-top-left-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
 	img {
 		max-width: 100%;
 		display: block;

@@ -19,17 +19,23 @@ body {
 main {
   background-color: #fff;
   margin: 1rem;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  max-width: 400px; }
+  max-width: 400px;
+  box-shadow: 0px 16px 20px -5px rgba(158, 175, 194, 0.4); }
 
 @media (min-width: 768px) {
   main {
     display: flex;
-    max-width: 46rem; } }
-.img-container img {
-  max-width: 100%;
-  display: block; }
+    max-width: 46rem;
+    overflow: visible; } }
+.img-container {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+  .img-container img {
+    max-width: 100%;
+    display: block; }
 
 @media (min-width: 768px) {
   .img-container img {
@@ -54,6 +60,8 @@ main {
     display: flex;
     align-items: center;
     padding: 1rem 2rem; }
+  .profile-preview-info.hidden {
+    display: none; }
   .profile-preview-img {
     overflow: hidden;
     border-radius: 100px;
@@ -72,16 +80,21 @@ main {
   .profile-preview-share {
     background-color: #48556a;
     padding: 1rem 2rem;
-    display: flex;
+    display: none;
     align-items: center;
     height: 82px;
-    display: none; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
     .profile-preview-share h2 {
       text-transform: uppercase;
       font-size: 0.75rem;
       color: #9eafc2;
       font-weight: 500;
       letter-spacing: 4px; }
+  .profile-preview-share.open {
+    display: flex; }
   .profile-preview-social {
     display: flex;
     align-items: center; }
@@ -98,7 +111,33 @@ main {
   bottom: 1.5rem;
   right: 2rem; }
 
+.share-btn.active {
+  background-color: #6d7f97; }
+
+.share-btn svg {
+  fill: #6e8098; }
+
+.share-btn.active svg {
+  fill: #fff; }
+
 @media (min-width: 768px) {
+  .profile-preview-share {
+    justify-content: space-around;
+    max-width: 220px;
+    top: -60px;
+    left: 299px;
+    padding: 1rem;
+    height: auto;
+    border-radius: 8px; }
+  .profile-preview-share::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    border-top: 10px solid #48556a;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
+
   .share-btn {
     cursor: pointer; } }
 

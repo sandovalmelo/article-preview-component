@@ -1,14 +1,16 @@
 main {
 	background-color: $white;
 	margin: 1rem;
-	border-radius: 12px;
+	border-radius: $border-radius;
 	overflow: hidden;
 	max-width: 400px;
+	box-shadow: 0px 16px 20px -5px rgba($color: hsl(212, 23%, 69%), $alpha: 0.4);
 }
 
 @media (min-width: $medium-brak-point) {
 	main {
 		display: flex;
 		max-width: 46rem;
+		overflow: visible;
 	}
 }
